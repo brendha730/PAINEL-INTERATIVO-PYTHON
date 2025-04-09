@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 from datetime import datetime
 
-df = pd.read_csv(r"C:\Users\brend\Downloads\base_frosty_indicadores_industriais.csv", sep=';')
+df = pd.read_csv("base_frosty_indicadores_industriais.csv", sep=";")
 coluna_motivo = [col for col in df.columns if "Motivo" in col]
 df["Data Abertura"] = pd.to_datetime(df["Data Abertura"])
 df["Data Início"] = pd.to_datetime(df["Data Início"])
